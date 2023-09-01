@@ -13,18 +13,24 @@
       <input type="text" name="author" id="author" />
       <input type="text" name="title" id="title" />
       <input type="number" name="year" id="year" />
-      <button id="add">Add</button>
     </form>
+    <button id="add">Add</button>
     <table id="list">
       <tr>
-        Author
+        <th>Author</th>
+        <th>Title</th>
+        <th>Year</th>
+        <th></th>
       </tr>
-      <tr>
-        Title
-      </tr>
-      <tr>
-        Year
-      </tr>
+
+      <template id="newtemp">
+        <tr>
+          <td id="display"></td>
+          <td id="displaytwo"></td>
+          <td id="displaythree"></td>
+          <td><button id="delete">X</button></td>
+        </tr>
+      </template>
     </table>
 
     <script src="js.js"></script>
