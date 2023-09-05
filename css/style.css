@@ -1,0 +1,104 @@
+:root {
+  --colorMain: black;
+  --colorBgMain: white;
+
+  --colorHeader: floralwhite;
+  --colorBgHeader: #603140;
+
+  --colorHoverButton: #603140;
+  --colorTextHoverButton: white;
+
+  --fontMain: Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fontMain);
+}
+main {
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+header,
+footer {
+  color: var(--colorHeader);
+  background-color: var(--colorBgHeader);
+}
+
+header {
+  padding: 0.25rem 0.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 0.25rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Non-landmark elements */
+
+label {
+  display: inline-block;
+  width: 6rem;
+}
+
+form {
+  margin-bottom: 1rem;
+}
+
+form > div {
+  margin-bottom: 0.3rem;
+}
+
+input[type="submit"] {
+  padding: 0.25rem 1rem;
+  border-radius: 0.5rem;
+  border-width: 1px;
+}
+
+input[type="submit"]:hover {
+  padding: 0.25rem 1rem;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  background-color: var(--colorHoverButton);
+  cursor: pointer;
+  color: var(--colorTextHoverButton);
+}
+
+table {
+  border-collapse: collapse;
+}
+
+thead {
+  text-align: left;
+  color: var(--colorHeader);
+  background-color: var(--colorBgHeader);
+}
+
+th,
+td {
+  border: thin solid var(--colorBgMain);
+  padding: 0.25rem 0.25rem;
+}
+
+/* Classes */
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+img {
+  width: 4%;
+}
